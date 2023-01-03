@@ -1,0 +1,58 @@
+.header {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 90px;
+    font-weight: bold;
+    color: blue;
+}
+
+.container {
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 10px solid silver;
+    background-color: black;
+}
+
+.elem {
+    width: 180px;
+    height: 180px;
+}
+
+.red {
+    margin: 0 auto;
+    border: 7px solid rgb(89, 202, 165);
+    animation: square-to-circle 1s .83s infinite cubic-bezier(0.165, 0.84, 0.44, 1) alternate;
+    background-color: red;
+}
+
+@keyframes square-to-circle {
+    0% {
+        border-radius: 0% 0% 0% 0%;
+        background-color: pink;
+        transform: rotate(0deg);
+    }
+    25% {
+        border-radius: 25% 25% 25% 25%;
+        background-color: blue;
+        transform: rotate(45deg);
+    }
+    50% {
+        border-radius: 50% 50% 50% 50%;
+        background-color: purple;
+        transform: rotate(90deg);
+    }
+    75% {
+        border-radius: 75% 75% 75% 75%;
+        background-color: green;
+        transform: rotate(90deg);
+    }
+    100% {
+        border-radius: 100% 100% 100% 100%;
+        background-color: red;
+        transform: rotate(360deg);
+    }
+}
